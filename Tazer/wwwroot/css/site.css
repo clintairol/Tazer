@@ -91,6 +91,58 @@ nav ul li{
       background-position: 0 0;
     }
 /*body*/
+
+/*about*/
+.background-2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../lib/resources/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-left: 20%;
+    padding-right: 20%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.about-title .title {
+    color: #06283D;
+    font-size: 50px;
+    font-weight: 700;
+}
+.about-tile .description{
+
+}
+.about-content{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    background-color: white;
+    max-width: 2000px;
+}
+
+
+.members-content{
+    display:flex;
+    justify-content: space-evenly;
+    margin: 70px;
+}
+.about-members{
+    margin: 50px;
+    box-sizing: border-box;
+}
+
+.members {
+    background-color: #3A8891;
+    padding: 30px;
+    border-radius: 30px;
+    width: 100px;
+    height: 150px;
+}
+
+/*about*/
 html {
   font-size: 14px;  
 }
