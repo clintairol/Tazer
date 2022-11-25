@@ -1,0 +1,111 @@
+/*header*/
+.navbar-brand{
+    font-style:normal;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 500;
+    width: 200px;
+}
+
+nav{
+    padding-left: 60px;
+}
+
+li {
+    
+    line-height: 60px
+}
+nav ul li{
+    font-size: 15px;
+    margin: 0 20px;
+}
+
+/*header*/
+
+/*body*/
+
+.container-2{
+    width: 100%;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../lib/resources/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 10%;
+    padding-right: 25%;
+    box-sizing: border-box;
+    position:relative;
+}
+
+
+
+.header p {
+    font-weight: 300;
+    line-height: 12px;
+    font-size: 15px;
+    color: #0E5E6F;
+}
+
+.header h2{
+    line-height: 30px;
+    font-weight: 600;
+    color: #0E5E6F;
+}
+
+.header span {
+    font-weight: 400;
+    color: #3A8891
+}
+
+.background .header{
+    position: absolute;
+    margin-top: 20%;
+    width: 50%;
+}
+
+.button-home{
+    margin-top: 30px;
+}
+    .button-home .button a {
+        font-weight: 400;
+    }
+
+    .button-home .button {
+        border-radius: 20px;
+        width: 100px;
+        align-content: center;
+        padding: 5px 40px;
+        background-image: linear-gradient( 120deg, #06283D, #0E5E6F, #3A8891);
+        background-size: 500% 100%;
+        background-position: 100% 0;
+        text-decoration: none;
+        color: white;
+        transition: background-position .3s;
+    }
+
+    .button-home .button:hover {
+      background-position: 0 0;
+    }
+/*body*/
+html {
+  font-size: 14px;  
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
