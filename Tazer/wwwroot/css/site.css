@@ -106,39 +106,46 @@ nav ul li{
     box-sizing: border-box;
     position: relative;
 }
+.about-content{
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+    background-color: white;
+    width: auto;
+}
 
 .about-title .title {
     color: #06283D;
     font-size: 50px;
     font-weight: 700;
 }
-.about-tile .description{
-
-}
-.about-content{
-    position: relative;
-    text-align: center;
-    padding-top: 50px;
-    background-color: white;
-    max-width: 2000px;
+.description{
+    font-size: 20px;
+    font-style: normal;
 }
 
 
 .members-content{
+    position: relative;
     display:flex;
     justify-content: space-evenly;
     margin: 70px;
 }
 .about-members{
+    position: relative;
     margin: 50px;
     box-sizing: border-box;
 }
+.display-profile{
+    height: 100px;
+}
 
 .members {
+    position: relative;
     background-color: #3A8891;
     padding: 30px;
     border-radius: 30px;
-    width: 100px;
+    width: 300px;
     height: 150px;
 }
 
