@@ -33,6 +33,10 @@ p {
     margin: 15px 0 20px 0;
 }
 
+#header1{
+    text-align:center;
+}
+
 .section-p1 {
     padding: 40px 80px;
 }
@@ -40,9 +44,17 @@ p {
 .section-m1 {
     margin: 40px 0;
 }
+.body{
+    width:100%;
+    padding-bottom:60px;
+    top:100px;
+}
 
 body {
     width: 100%;
+    top: 100px;
+    padding-top: 90px;
+    padding-bottom:60px;
 }
 
 #add-item i {
@@ -54,11 +66,20 @@ body {
     border-radius: 50px;
 }
 
+#add-item a {
+    color: white;
+    text-decoration: none;
+}
+
+#add-item .plus{
+    color: white;
+}
+
 .add-button {
     position: fixed;
-    width: 130px;
+    width: 140px;
     height: 50px;
-    bottom: 40px;
+    bottom: 80px;
     right: 30px;
     text-align: left;
     padding-left: 10px;
@@ -71,29 +92,33 @@ body {
     cursor: pointer;
 }
 
+.pro-container{
+    padding: 0 80px;
+}
+
 #product1 {
     text-align: center;
 }
 
 #product1 .pro-container {
-display: flex;
-justify-content: space-between;
-padding-top: 20px;
-flex-wrap: wrap;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
 }
 
 #product1 .pro {
-width: 23%;
-min-width: 250px;
-padding: 10px 12px;
-border: 1px solid #248da3;
-border-radius: 15px;
-cursor: pointer;
-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-margin: 15px 0;
-transition: 0.3s ease;
-background-color: #228094;
-position: relative;
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #248da3;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.3s ease;
+    background-color: #228094;
+    position: relative;
 }
 
 #product1 .pro:hover {
@@ -114,28 +139,33 @@ position: relative;
     padding: 10px 0;
 }
 
-    #product1 .pro .des span {
-        color: #8fdbeb;
-        font-size: 12px;
-    }
+#product1 .pro .des span {
+    color: #8fdbeb;
+    font-size: 12px;
+}
 
-    #product1 .pro .des h5 {
-        padding-top: 7px;
-        color: white;
-        font-size: 14px;
-    }
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: white;
+    font-size: 16px;
+}
 
-    #product1 .pro .des i {
-        font-size: 12px;
-        color: #eac612;
-    }
+#product1 .pro .des h6 {
+    font-size: 12px;
+    color: white;
+}
 
-    #product1 .pro .des h4 {
-        padding-top: 7px;
-        font-size: 15px;
-        font-weight: 700;
-        color: #c1e5ec;
-    }
+#product1 .pro .des i{
+    font-size: 12px;
+    color: #eac612;
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #c1e5ec;
+}
 
 #product1 .pro .cart {
     width: 40px;
@@ -151,9 +181,18 @@ position: relative;
     right: 10px;
 }
 
-.buttons {
+#buttons {
     padding-top: 5px;
 }
+
+#buttons a{
+    text-decoration: none;
+    color:white;
+    padding:4px;
+}
+    #buttons a:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
 
 .button-81 {
     background-color: #248da3;
@@ -171,14 +210,14 @@ position: relative;
     text-align: center;
     text-decoration: none #ffffff solid;
     text-decoration-thickness: auto;
-    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    transition: .2s ease;
     box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
 }
 
-.button-81:hover {
-    background-color: white;
-    color: #248da3;
-}
+    .button-81:hover {
+        background-color: #319eb5;
+        color: white;
+    }
