@@ -307,8 +307,11 @@ nav ul li{
     padding: 50px
 }
 
-
+.description-heading-delete h3{
+    color: #06283D;
+}
 .description-heading-delete li {
+    color: #06283D;
     line-height: 40px;
     font-size: 20px;
     list-style: none;
@@ -317,6 +320,7 @@ nav ul li{
 }
 
 .description-heading-delete span {
+    color: #0E5E6F;
     font-weight: 300;
     width: 300px;
 }
@@ -347,6 +351,44 @@ nav ul li{
     margin-left: -10px;
 }
 /*---------------------------------------delete page---------------------------------------*/
+/*---------------------------------------detailspage---------------------------------------*/
+.description-details {
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 50px
+}
+
+.description-heading-details li {
+    line-height: 40px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: 800;
+    margin-left: -30px;
+}
+
+.button-edit-wrap .button-edit {
+    text-decoration: none;
+    position: relative;
+    margin: 30px 0;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    padding: 20px 100px;
+    background-color: #0E5E6F;
+}
+
+.description-heading-details span {
+    font-weight: 300;
+    width: 300px;
+}
+
+.button-details {
+    display: flex;
+    align-content:center;
+    flex-wrap: wrap;
+}
+.
+/*---------------------------------------detailspage---------------------------------------*/
     html {
         font-size: 14px;
     }
