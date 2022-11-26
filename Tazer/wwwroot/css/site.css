@@ -1,4 +1,4 @@
-/*header*/
+/*---------------------------------------header---------------------------------------*/
 .navbar-brand{
     font-style:normal;
     color: #ffffff;
@@ -21,9 +21,9 @@ nav ul li{
     margin: 0 20px;
 }
 
-/*header*/
+/*---------------------------------------header---------------------------------------*/
 
-/*body*/
+/*---------------------------------------body---------------------------------------*/
 
 .container-2{
     width: 100%;
@@ -91,9 +91,9 @@ nav ul li{
     .button-home .button:hover {
       background-position: 0 0;
     }
-/*body*/
+/*---------------------------------------body---------------------------------------*/
 
-/*about*/
+/*---------------------------------------about---------------------------------------*/
 /*min-height para di mulapas sa footer*/
 .background-2{
     min-height: 100vh;
@@ -110,13 +110,14 @@ nav ul li{
     position: relative;
     text-align: center;
     margin: auto;
-    padding: 30px 30px;
+    padding: 30px 10px;
     background-color: rgba(241, 237, 237, 0.77);
+    background-size: cover;
     width: auto;
 }
 
 .about-title .title {
-    margin: 50px 0 90px 0;
+    margin: 50px 0 30px 0;
     color: #06283D;
     font-size: 50px;
     font-weight: 700;
@@ -125,7 +126,7 @@ nav ul li{
 
 .description {
     color: #256D85;
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
     font-weight: 600;
 }
@@ -172,7 +173,7 @@ nav ul li{
 .members .role {
     color: inherit;
     transition: 0.5s;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -209,12 +210,104 @@ nav ul li{
 .members a:hover{
     font-size:45px;
 }
-
-
-/*about*/
-html {
-  font-size: 14px;  
+/*---------------------------------------about---------------------------------------*/
+/*---------------------------------------edit page---------------------------------------*/
+.background-3 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../lib/resources/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10% 65% 10% 4%;
+    box-sizing: border-box;
+    position: relative;
 }
+
+.edit-row-content {
+    padding: 30px;
+    background-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF);
+    border-radius: 25px;
+}
+
+.edit-row-content form .details {
+    max-height: 400px;
+    overflow-y: scroll;
+    scrollbar-color: #6969dd #e0e0e0;
+}
+.details::-webkit-scrollbar {
+    width: 10px;
+}
+.details::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px rgba(20, 121, 146, 0.8);
+}
+
+.details::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group label{
+    color: #06283D;
+    font-weight: 500;
+    font-size: 18px;
+}
+.form-group input {
+    color: #0E5E6F;
+    font-size: 18px;
+}
+
+.form-group-btn {
+    margin: 30px 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form-group-btn .button {
+    border: none;
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    background-image: linear-gradient( 120deg, #06283D, #0E5E6F, #3A8891);
+    background-size: 500% 100%;
+    background-position: 100% 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-position 0.5s;
+}
+.form-group-btn .button:hover{
+    background-position: 0 0;
+}
+
+.return-back a{
+    color:#0E5E6F;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.edit-row h1{
+    text-align: center;
+    color: #06283D;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*---------------------------------------edit page---------------------------------------*/
+/*---------------------------------------delete page---------------------------------------*/
+
+
+
+/*---------------------------------------delete page---------------------------------------*/
+    html {
+        font-size: 14px;
+    }
 
 @media (min-width: 768px) {
   html {
