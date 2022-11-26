@@ -4,60 +4,53 @@
 @{
     ViewData["Title"] = "My Items";
 }
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=egde">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="~/css/myItems.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/myItems.css"/>
+    <link rel="stylesheet" href="~/font-awesome/css/all.css"/>
     <title>My Items</title>
 </head>
-
 <body>
-    @foreach (var item in Model.Tees) {
     <section id="product1" class="section-p1">
-        
         <h2>All Posted Items</h2>
-        <p>Lorem ipsum</p>
+        <p>Post more for more market visibility.</p>
+    </section>
         
+    <section id="product1" >
         <div class="pro-container">
+            @foreach (var item in Model.Tees) {
             <div class="pro">
                 <img src = "~/lib/resources/GraphicTee.png" alt = "product image">
                 <div class="des">
                     <span>@Html.DisplayFor(modelItem => item.Brand)</span>
                     <h5>@Html.DisplayFor(modelItem => item.Product)</h5>
                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <h6>Sizes:@Html.DisplayFor(modelItem => item.Sizes)</h6>
+                        <h6>Stock:@Html.DisplayFor(modelItem => item.Quantity)</h6>
+                        <h6>Created:@Html.DisplayFor(modelItem => item.Date)</h6>
+                        
                     </div>
                     <h4>₱ @Html.DisplayFor(modelItem => item.Price)</h4>
                 </div>
-                <!--<a href="#"><i class="fal fa-shopping-cart cart"></i></a>-->
                 <div id="buttons" class="buttons">
-                    <button class="button-81" role="button"><a asp-page="./Edit" asp-route-id="@item.ID" ><i class="fa fa-pencil-square"></i>  Edit</a></button>
+                    <button class="button-81" role="button">
+                        <a asp-page="./Edit" asp-route-id="@item.ID" >
+                            <i class="fa fa-pencil-square"></i>  Edit
+                        </a>
+                    </button>
                     <button class="button-81" role="button"><a asp-page="./Details" asp-route-id="@item.ID" ><i class="fa fa-file-text"></i>  Details</a></button>
                     <button class="button-81" role="button"><a asp-page="./Delete" asp-route-id="@item.ID" ><i class="fa fa-trash"></i>  Delete</a></button> 
                 </div>
             </div>
-            
-        </div>
+            }
+            </div>
     </section>
-
+    
     <section id="add-item">
         <button class="add-button"><a asp-page="Create">Add Items<i class="fa fa-plus-circle plus"></i></a></button>
     </section>
-}
-    <script src="script.js"></script>
+    
 </body>
-
-</html>
