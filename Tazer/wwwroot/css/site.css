@@ -35,6 +35,7 @@ nav ul li{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment:fixed;
     padding-left: 10%;
     padding-right: 25%;
     box-sizing: border-box;
@@ -93,61 +94,122 @@ nav ul li{
 /*body*/
 
 /*about*/
+/*min-height para di mulapas sa footer*/
 .background-2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url(../lib/resources/bg1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 200px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding: 10% 0;
     box-sizing: border-box;
     position: relative;
 }
-.about-content{
+.about-content {
     position: relative;
     text-align: center;
-    padding-top: 50px;
-    background-color: white;
+    margin: auto;
+    padding: 30px 30px;
+    background-color: rgba(241, 237, 237, 0.77);
     width: auto;
 }
 
 .about-title .title {
+    margin: 50px 0 90px 0;
     color: #06283D;
     font-size: 50px;
     font-weight: 700;
+    letter-spacing: 5px
 }
-.description{
+
+.description {
+    color: #256D85;
     font-size: 20px;
-    font-style: normal;
+    font-style: italic;
+    font-weight: 600;
 }
 
 
 .members-content{
+    margin: 50px;
     position: relative;
     display:flex;
-    justify-content: space-evenly;
-    margin: 70px;
-}
-.about-members{
-    position: relative;
-    margin: 50px;
-    box-sizing: border-box;
-}
-.display-profile{
-    height: 100px;
+    justify-content:center;
+    flex-wrap: wrap;
 }
 
-.members {
+.about-members {
+    color: #256D85;
+    box-shadow: 0 0 20px rgba(227, 225, 225, 0.47);
+    background-image: linear-gradient( 60deg, #FFFFFF, #DFF6FF);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    border-radius: 12px;
     position: relative;
-    background-color: #3A8891;
-    padding: 30px;
-    border-radius: 30px;
-    width: 300px;
-    height: 150px;
+    margin: 25px;
+    box-sizing: border-box;
+    transition: background-position 0.5s;
 }
+
+.about-members:hover {
+    background-position: 0 0;
+    background-image: linear-gradient( 60deg, #06283D, #0E5E6F, #3A8891);
+    color: white;
+}
+
+.display-profile{
+    height: 100px;
+    margin: 40px 0; 
+}
+
+.members .name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.members .role {
+    color: inherit;
+    transition: 0.5s;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.members {
+    margin: 20px 0;
+    position: relative;
+    padding: 5px;
+    border-radius: 30px;
+    width: 250px;
+    height: auto;
+}
+
+.members .name{
+    color:inherit;
+    height: 50px;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 30px 5px 30px;
+    transition: 0.5s;
+}
+.social-links{
+    margin-top: 50px;
+    width: 100%;
+}
+.members a {
+    color: inherit;
+    font-size: 40px;
+    width: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.members a:hover{
+    font-size:45px;
+}
+
 
 /*about*/
 html {
