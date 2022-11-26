@@ -301,9 +301,51 @@ nav ul li{
 }
 /*---------------------------------------edit page---------------------------------------*/
 /*---------------------------------------delete page---------------------------------------*/
+.description-delete{
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 50px
+}
 
 
+.description-heading-delete li {
+    line-height: 40px;
+    font-size: 20px;
+    list-style: none;
+    font-weight: 800;
+    margin-left: -30px;
+}
 
+.description-heading-delete span {
+    font-weight: 300;
+    width: 300px;
+}
+
+.button-delete {
+    display: flex;
+    justify-content: center;
+}
+
+.button-delete-wrap .button-delete {
+    position: relative;
+    margin: 30px 0;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    padding: 20px 100px;
+    background-color: #0E5E6F;
+}
+.return-back-delete {
+    display: flex;
+    justify-content: center;
+}
+
+.return-back-delete a {
+    color: #0E5E6F;
+    text-decoration: none;
+    padding: 5px 30px;
+    margin-left: -10px;
+}
 /*---------------------------------------delete page---------------------------------------*/
     html {
         font-size: 14px;
