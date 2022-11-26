@@ -36,11 +36,7 @@
                     <h4>₱ @Html.DisplayFor(modelItem => item.Price)</h4>
                 </div>
                 <div id="buttons" class="buttons">
-                    <button class="button-81" role="button">
-                        <a asp-page="./Edit" asp-route-id="@item.ID" >
-                            <i class="fa fa-pencil-square"></i>  Edit
-                        </a>
-                    </button>
+                    <button class="button-81" role="button"><a asp-page="./Edit" asp-route-id="@item.ID" ><i class="fa fa-pencil-square"></i>  Edit</a></button>
                     <button class="button-81" role="button"><a asp-page="./Details" asp-route-id="@item.ID" ><i class="fa fa-file-text"></i>  Details</a></button>
                     <button class="button-81" role="button"><a asp-page="./Delete" asp-route-id="@item.ID" ><i class="fa fa-trash"></i>  Delete</a></button> 
                 </div>

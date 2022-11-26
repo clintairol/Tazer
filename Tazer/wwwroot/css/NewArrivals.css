@@ -121,9 +121,9 @@ transition: 0.2s ease;
 position: relative;
 }
 
-#product1 .pro:hover {
-box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
-}
+    #product1 .pro:hover {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
 
 #product1 .pro img {
 width: 100%;

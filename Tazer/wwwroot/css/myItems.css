@@ -62,7 +62,7 @@ body {
     position: absolute;
     top: -8px;
     right: -17px;
-    border: 4px solid #3097ac;
+    border: 4px solid #3A8891;
     border-radius: 50px;
 }
 
@@ -90,6 +90,13 @@ body {
     color: white;
     border: 1px solid #c1e5ec;
     cursor: pointer;
+    background-color: #317f8a;
+    background-position: 100% 0;
+    transition: .3s ease;
+}
+
+#add-item .add-button:hover{
+    background-color:#072e42;
 }
 
 .pro-container{
@@ -116,18 +123,14 @@ body {
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 15px 0;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
     background-color: #228094;
     position: relative;
 }
 
-#product1 .pro:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-        rgba(0, 0, 0, 0.12) 0px -12px 30px, 
-        rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-        rgba(0, 0, 0, 0.17) 0px 12px 13px, 
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
+    #product1 .pro:hover {
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
 
 #product1 .pro img {
     width: 100%;
@@ -190,9 +193,7 @@ body {
     color:white;
     padding:4px;
 }
-    #buttons a:hover {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    }
+    
 
 .button-81 {
     background-color: #248da3;
