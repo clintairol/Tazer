@@ -6,29 +6,31 @@
 }
 
 <div class="background-3">
-    <div class="description-delete">
-        <div class="description-heading-delete">
+    <div class="description-details">
+        <div class="description-heading-details">
             <h3>Are you sure you want to delete this?</h3>
             <hr />
-            <ul class="row-delete-details">
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Quantity): <span>  @Html.DisplayFor(model => model.Tees.Quantity)</span></li>
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Product): <span>  @Html.DisplayFor(model => model.Tees.Product)</span></li>
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Brand): <span>  @Html.DisplayFor(model => model.Tees.Brand)</span></li>
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Color): <span>  @Html.DisplayFor(model => model.Tees.Color)</span></li>
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Sizes): <span>  @Html.DisplayFor(model => model.Tees.Sizes)</span></li>
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Neckline): <span>  @Html.DisplayFor(model => model.Tees.Neckline)</span></li>
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Material): <span>  @Html.DisplayFor(model => model.Tees.Material)</span></li>
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Price): <span>  @Html.DisplayFor(model => model.Tees.Price)</span></li>
-                <li class="delete-details">@Html.DisplayNameFor(model => model.Tees.Date): <span>  @Html.DisplayFor(model => model.Tees.Date)</span></li>
+            <ul class="row-details">
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Quantity): <span>  @Html.DisplayFor(model => model.Tees.Quantity)</span></li>
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Product): <span>  @Html.DisplayFor(model => model.Tees.Product)</span></li>
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Brand): <span>  @Html.DisplayFor(model => model.Tees.Brand)</span></li>
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Color): <span>  @Html.DisplayFor(model => model.Tees.Color)</span></li>
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Sizes): <span>  @Html.DisplayFor(model => model.Tees.Sizes)</span></li>
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Neckline): <span>  @Html.DisplayFor(model => model.Tees.Neckline)</span></li>
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Material): <span>  @Html.DisplayFor(model => model.Tees.Material)</span></li>
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Price): <span>  @Html.DisplayFor(model => model.Tees.Price)</span></li>
+                <li class="details">@Html.DisplayNameFor(model => model.Tees.Date): <span>  @Html.DisplayFor(model => model.Tees.Date)</span></li>
             </ul>
-            <div class="button-delete">
+            <div class="button-container-wrap">
                 <form method="post">
                     <input type="hidden" asp-for="Tees.ID" />
-                    <div class="return-back-delete">
-                        <a asp-page="./Index">Back to List</a>
-                    </div>
-                    <div class="button-delete-wrap">
-                        <input type="submit" value="Delete" class="button-delete" />
+                    <div class="button-wrap">
+                        <div class="button-delete-wrap">
+                            <input type="submit" value="Delete" class="button-delete" />
+                        </div>
+                        <div class="return-back-button">
+                            <a class="back-to-list" asp-page="./Index">Back to List</a>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -37,3 +39,9 @@
     </div>
 
 </div>
+
+                @*button-delete ==> button-container
+                    button-wrap
+                    return-back delete ==> button-wrap
+                    button-delete-wrap ==> button-input
+                *@

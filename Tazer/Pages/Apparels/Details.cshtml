@@ -21,12 +21,14 @@
                 <li class="details">@Html.DisplayNameFor(model => model.Tees.Price): <span>  @Html.DisplayFor(model => model.Tees.Price)</span></li>
                 <li class="details">@Html.DisplayNameFor(model => model.Tees.Date): <span>  @Html.DisplayFor(model => model.Tees.Date)</span></li>
             </ul>
-            <div class="button-details">
-                <div class="button-details-wrap">
-                    <a asp-page="./Edit" asp-route-id="@Model.Tees?.ID">Edit</a> |
-                </div>
-                <div class="button-edit-wrap">
-                    <a class="button-details" asp-page="./Index">Back to List</a>
+            <div class="button-container-wrap">
+                <div class="button-wrap">
+                    <div class="button-edit">
+                        <a class="edit" asp-page="./Edit" asp-route-id="@Model.Tees?.ID">Edit</a>
+                    </div>
+                    <div class="return-back-button">
+                        <a class="back-to-list" asp-page="./Index">Back to List</a>
+                    </div>
                 </div>
             </div>
         </div>
