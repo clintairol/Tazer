@@ -1,5 +1,6 @@
 /*---------------------------------------header---------------------------------------*/
 .navbar-brand{
+    text-decoration: none;
     font-style:normal;
     color: #ffffff;
     font-size: 30px;
@@ -16,6 +17,7 @@ li {
     
     line-height: 60px
 }
+
 nav ul li{
     font-size: 15px;
     margin: 0 20px;
@@ -301,55 +303,104 @@ nav ul li{
 }
 /*---------------------------------------edit page---------------------------------------*/
 /*---------------------------------------delete page---------------------------------------*/
-.description-delete{
+.description-details{
     background: #FFFFFF;
     border-radius: 30px;
-    padding: 50px
+    padding: 50px;
 }
 
+.description-heading-details h3 {
+    text-align: center;
+    color: #0E5E6F;
+    letter-spacing: 2px;
+}
 
-.description-heading-delete li {
+.description-heading-details h1 {
+    text-transform: uppercase;
+    
+    text-align: center;
+    color: #0E5E6F;
+}
+.description-heading-details li {
+    color: #0E5E6F;
     line-height: 40px;
     font-size: 20px;
     list-style: none;
-    font-weight: 800;
+    font-weight: 500;
     margin-left: -30px;
 }
 
-.description-heading-delete span {
+.description-heading-details span{
+    text-align:center;
+    margin-left: 10px;
+    color: #06283D;
     font-weight: 300;
-    width: 300px;
 }
-
-.button-delete {
+    
+/*---------------------------------------detailspage---------------------------------------*/
+/*---------------------------------------button for delete and details---------------------------------------*/
+.return-back-button .back-to-list {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-}
-
-.button-delete-wrap .button-delete {
-    position: relative;
-    margin: 30px 0;
-    border: none;
-    margin-top: 15px;
-    color: white;
-    padding: 20px 100px;
-    background-color: #0E5E6F;
-}
-.return-back-delete {
-    display: flex;
-    justify-content: center;
-}
-
-.return-back-delete a {
-    color: #0E5E6F;
+    text-align: center;
     text-decoration: none;
-    padding: 5px 30px;
-    margin-left: -10px;
 }
-/*---------------------------------------delete page---------------------------------------*/
-    html {
-        font-size: 14px;
+.button-delete-wrap .button-delete {
+    border: none;
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    background-image: linear-gradient( 120deg, #06283D, #0E5E6F, #3A8891);
+    background-size: 500% 100%;
+    background-position: 100% 0;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-position 0.5s;
+}
+
+.button-delete-wrap .button-delete:hover {
+    background-position: 0 0;
+    background-image: linear-gradient( 120deg, #b50c0c, #e00c19, #f71f18);
+}
+
+/*edit page button*/
+.button-container-wrap{
+    margin-top: 10px;
+    text-align: center;
+}
+.button-edit .edit {
+    display: inline-block;
+    border: none;
+    width: 100%;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-image: linear-gradient( 120deg, #06283D, #0E5E6F, #3A8891);
+    background-size: 500% 100%;
+    background-position: 100% 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-position 0.5s;
+}
+.button-edit .edit:hover    {
+    background-position: 0 0;
+}
+    .return-back-details .back-to-list {
+        text-decoration: none;
     }
+
+/*---------------------------------------button for delete and details---------------------------------------*/
+html {
+    font-size: 14px;
+}
 
 @media (min-width: 768px) {
   html {
