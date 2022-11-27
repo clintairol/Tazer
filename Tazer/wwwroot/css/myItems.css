@@ -17,10 +17,6 @@ h2 {
     color: #236370;
 }
 
-.des span{
-    font-size: 20px;
-}
-
 h4 {
     font-size: 20px;
     color: white;
@@ -58,11 +54,7 @@ body {
     width: 100%;
     top: 100px;
     padding-top: 90px;
-    padding-bottom: 60px;
-    background-image: url(../lib/resources/bg1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    padding-bottom:60px;
 }
 
 #add-item i {
@@ -82,44 +74,7 @@ body {
 #add-item .plus{
     color: white;
 }
-/*search*/
-.search input{
-    position:relative;
-    display: inline-block;
-    font-size: 18px;
-    box-sizing: border-box;
-    transition: 0,5s;
-}
 
-input[type="text"]{
-    color: #0E5E6F;
-    height: 50px;
-    border: none; 
-    padding: 0 20px;
-    outline: none;
-    border-radius: 25px 0 0 25px;
-    
-}
-
-input[type="submit"] {
-    position: relative;
-    border-radius: 0 25px 25px 0;
-    left: -5px;
-    width: 90px;
-    height: 50px;
-    border: none;
-    outline: none;
-    background-image: linear-gradient( 120deg, #06283D, #0E5E6F, #3A8891);
-    background-image: linear-gradient( 120deg, #06283D, #0E5E6F, #3A8891);
-    background-size: 500% 100%;
-    transition: background-position 0.5s;
-    background-position: 100% 0;
-    color: white;
-}
-input[type="submit"]:hover {
-    background-position: 0 0;
-}
-/*search*/
 .add-button {
     position: fixed;
     width: 140px;
@@ -154,8 +109,7 @@ input[type="submit"]:hover {
 
 #product1 .pro-container {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-between;
     padding-top: 20px;
     flex-wrap: wrap;
 }
@@ -238,12 +192,10 @@ input[type="submit"]:hover {
     text-decoration: none;
     color:white;
     padding:4px;
-    
 }
     
 
 .button-81 {
-    margin: 5px;
     background-color: #248da3;
     border: 0 solid rgb(255, 255, 255);
     border-color: white;

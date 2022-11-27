@@ -1,5 +1,6 @@
 /*---------------------------------------header---------------------------------------*/
-/*.navbar-brand{
+.navbar-brand{
+    text-decoration: none;
     font-style:normal;
     color: #ffffff;
     font-size: 30px;
@@ -7,14 +8,8 @@
     font-weight: 500;
     width: 200px;
 }
-*/
 
-.navbar-brand {
-    font-size: 30px;
-    line-height: 20px;
-    font-weight: 500;
-}
-nav {
+nav{
     padding-left: 60px;
 }
 
@@ -222,16 +217,15 @@ nav ul li{
 .background-3 {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(236, 244, 245, 0.50), rgba(204, 218, 221, 0.71 )), url(../lib/resources/bg1.jpg);
+    background-image: url(../lib/resources/bg1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 10% 65% 10% 4%;
     box-sizing: border-box;
+    position: relative;
 }
-.edit-row-content{
-    z-index: 1;
-}
+
 .edit-row-content {
     padding: 30px;
     background-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF);

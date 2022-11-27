@@ -9,9 +9,9 @@ namespace Tazer.Models
     public class Tees
     {
         public int ID { get; set; }
-        public string? Product { get; set; }
+        public string Product { get; set; }
         public int Quantity { get; set; }
-        public string? Brand { get; set; }
+        public string Brand { get; set; }
         public string Color { get; set; }
         public string Design { get; set; }
         public string Sizes { get; set; }
