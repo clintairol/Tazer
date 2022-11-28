@@ -36,7 +36,7 @@
             <div class="pro">
                 <img src = "~/lib/resources/GraphicTee.png" alt = "product image">
                 <div class="des">
-                    <span>@Html.DisplayFor(modelItem => item.Brand)</span>
+                    <span class="brand">@Html.DisplayFor(modelItem => item.Brand)</span>
                     <h5>@Html.DisplayFor(modelItem => item.Product)</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -47,7 +47,9 @@
                     </div>
                     <h4>₱ @Html.DisplayFor(modelItem => item.Price)</h4>
                 </div>
-                <a asp-page="/Apparels/Index"><i class="fal fa-shopping-cart cart"></i></a>
+                    <a asp-page="/Apparels/.Details" asp-route-id=""><i class="fal fa-shopping-cart cart"></i>
+
+                </a>
             </div>
             }
             </div>

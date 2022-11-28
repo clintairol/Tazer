@@ -33,12 +33,13 @@
             <div class="pro">
                 <img src = "~/lib/resources/GraphicTee.png" alt = "product image">
                 <div class="des">
-                    <span>@Html.DisplayFor(modelItem => item.Brand)</span>
+                    <h1>@Html.DisplayFor(modelItem => item.Brand)</h1>
+                    <hr></hr>
                     <h5>@Html.DisplayFor(modelItem => item.Product)</h5>
                     <div class="star">
-                        <h6>Sizes:@Html.DisplayFor(modelItem => item.Sizes)</h6>
-                        <h6>Stock:@Html.DisplayFor(modelItem => item.Quantity)</h6>
-                        <h6>Created:@Html.DisplayFor(modelItem => item.Date)</h6>
+                        <h6>Sizes:  @Html.DisplayFor(modelItem => item.Sizes)</h6>
+                        <h6>Stock:  @Html.DisplayFor(modelItem => item.Quantity)</h6>
+                        <h6>Created: @Html.DisplayFor(modelItem => item.Date)</h6>
                         
                     </div>
                     <h4>₱ @Html.DisplayFor(modelItem => item.Price)</h4>
@@ -50,11 +51,11 @@
                 </div>
             </div>
             }
-            </div>
+         </div>
     </section>
     
     <section id="add-item">
-        <button class="add-button"><a asp-page="Create">Add Items<i class="fa fa-plus-circle plus"></i></a></button>
+        <button class="add-button"> <a asp-page="Create">Add Items<i class="fa fa-plus-circle plus"></i></a> </button>
     </section>
     
 </body>
