@@ -155,7 +155,7 @@ input[type="submit"]:hover {
 #product1 .pro-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 20px;
     flex-wrap: wrap;
 }
